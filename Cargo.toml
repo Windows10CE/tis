@@ -1,0 +1,14 @@
+[package]
+name = "tis"
+version = "0.1.0"
+authors = ["Aaron Robinson <aaronrobin1234@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mlua = { version="^0.5.4", features=["lua54","vendored","serialize"] }
+lazy_static = "^1.4.0"
+
+[profile.release]
+lto = true
